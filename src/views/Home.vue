@@ -1,18 +1,47 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="level">
+      <div class="level-left">
+        <spark-config-form :spark-config.sync="sparkConfig"></spark-config-form>
+      </div>
+      <div class="level-right">
+        <spark-config-output :spark-config="sparkConfig"></spark-config-output>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import SparkConfigOutput from '@/components/SparkConfigOutput';
+import SparkConfigForm from '@/components/SparkConfigForm';
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      sparkConfig: {
+        // configurable
+        masterMemoryGB: 256,
+        masterCoreCount: 65,
+        workerNodeCount: 5,
+        workerMemoryGB: 256,
+        workerCoreCount: 64,
+
+        overrideSettings: false,
+        // configurable but not recommended
+        memoryOverheadCoefficient: 0.1,
+        executorMemoryUpperGB: 64,
+        executorCoreMemoryUpperGB: 5,
+        osReservedCoreCount: 1,
+        osReservedMemoryGB: 1,
+        coreParallelism: 2,
+      },
+    };
+  },
   components: {
-    HelloWorld,
+    SparkConfigForm,
+    SparkConfigOutput,
   },
 };
 </script>
