@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">Apache Spark Config Cheatsheet</h1>
-    <a href="https://www.patreon.com/bePatron?u=35846156" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+    <a href="https://www.patreon.com/bePatron?u=35846156" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
     <br>
     <div class="columns">
       <div class="column">
@@ -46,6 +46,11 @@ export default {
   components: {
     SparkConfigForm,
     SparkConfigOutput,
+  },
+  mounted() {
+    const patreonScript = document.createElement('script');
+    patreonScript.setAttribute('src', 'https://c6.patreon.com/becomePatronButton.bundle.js');
+    document.head.appendChild(patreonScript);
   },
 };
 </script>
