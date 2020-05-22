@@ -9,6 +9,7 @@
         <spark-config-output :spark-config="sparkConfig"></spark-config-output>
       </div>
     </div>
+    <p><b>More Information: </b></p><a href="https://blog.cloudera.com/how-to-tune-your-apache-spark-jobs-part-1/">https://blog.cloudera.com/how-to-tune-your-apache-spark-jobs-part-1/</a>
   </div>
 </template>
 
@@ -46,3 +47,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .container {
+    top: 2rem;
+    margin-bottom: 2rem;
+  }
+</style>
