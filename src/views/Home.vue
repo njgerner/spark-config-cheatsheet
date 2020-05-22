@@ -12,6 +12,8 @@
       </div>
     </div>
     <p><b>More Information: </b></p><a href="https://blog.cloudera.com/how-to-tune-your-apache-spark-jobs-part-1/">https://blog.cloudera.com/how-to-tune-your-apache-spark-jobs-part-1/</a>
+    <br>
+    <p><b>Suggestions for this site:</b><a href="https://github.com/njgerner/spark-config-cheatsheet/issues">https://github.com/njgerner/spark-config-cheatsheet/issues</a></p>
   </div>
 </template>
 
