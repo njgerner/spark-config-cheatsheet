@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">Apache Spark Config Cheatsheet</h1>
+    <a href="https://www.patreon.com/bePatron?u=35846156" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
     <div class="columns">
       <div class="column">
         <spark-config-form :spark-config.sync="sparkConfig"></spark-config-form>
