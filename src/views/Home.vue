@@ -1,10 +1,11 @@
 <template>
   <div class="container">
-    <div class="level">
-      <div class="level-left">
+    <h1 class="title">Apache Spark Config Cheatsheet</h1>
+    <div class="columns">
+      <div class="column">
         <spark-config-form :spark-config.sync="sparkConfig"></spark-config-form>
       </div>
-      <div class="level-right">
+      <div class="column">
         <spark-config-output :spark-config="sparkConfig"></spark-config-output>
       </div>
     </div>

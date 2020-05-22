@@ -44,7 +44,7 @@
     <hr>
 
     <div class="field">
-      <b-switch v-model="sparkConfig.overrideSettings">Override Recommended Settings</b-switch>
+      <b-switch v-model="overrideSettings">Override Recommended Settings</b-switch>
     </div>
 
     <b-field label="Memory Overhead Coefficient"
@@ -120,5 +120,8 @@ export default {
   props: {
     sparkConfig: Object,
   },
+  data: () => ({
+    overrideSettings: false,
+  }),
 };
 </script>
